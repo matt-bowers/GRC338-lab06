@@ -1,4 +1,4 @@
-/* CSS Stylesheet */
+/* CSS Stylesheet – Compiled from SCSS */
 
 $table-border: solid 1px #ddd;
 
@@ -64,7 +64,7 @@ a {
 table {
   border-collapse: collapse;
   th, td {
-    border-bottom: $table-border;
+    border-bottom: $table-border; /* ATTENTION!! Border intentionally does not have border sides, because I think this looks better */
     vertical-align: bottom;
     text-align: left;
     span {
