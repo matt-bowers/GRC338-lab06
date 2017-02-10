@@ -1,12 +1,18 @@
 /* CSS Stylesheet */
-/* line 3, /Users/mbower01/Desktop/lab-5-mbower01/css/style.scss */
+/* line 5, /Users/mbower01/Desktop/lab-5-mbower01/css/style.scss */
 html, body {
   height: 100%;
   margin: 0;
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-size: 100%; }
 
-/* line 10, /Users/mbower01/Desktop/lab-5-mbower01/css/style.scss */
+/* line 12, /Users/mbower01/Desktop/lab-5-mbower01/css/style.scss */
+section {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* line 18, /Users/mbower01/Desktop/lab-5-mbower01/css/style.scss */
 h1 {
   font-weight: 600;
   font-size: 2em;
@@ -14,12 +20,36 @@ h1 {
   padding: 0;
   margin: 0; }
 
-/* line 17, /Users/mbower01/Desktop/lab-5-mbower01/css/style.scss */
+/* line 25, /Users/mbower01/Desktop/lab-5-mbower01/css/style.scss */
 h2 {
   font-weight: 300;
   font-size: 2em;
   line-height: 1em;
   padding: 0;
   margin: 0; }
+
+/* line 33, /Users/mbower01/Desktop/lab-5-mbower01/css/style.scss */
+table {
+  border-collapse: collapse;
+  border: solid 1px #ddd; }
+  /* line 36, /Users/mbower01/Desktop/lab-5-mbower01/css/style.scss */
+  table th {
+    border: solid 1px #ddd;
+    text-align: left;
+    font-weight: 600; }
+    /* line 40, /Users/mbower01/Desktop/lab-5-mbower01/css/style.scss */
+    table th span {
+      font-weight: 300;
+      font-style: italic; }
+  /* line 45, /Users/mbower01/Desktop/lab-5-mbower01/css/style.scss */
+  table td {
+    border: solid 1px #ddd;
+    vertical-align: bottom; }
+  /* line 49, /Users/mbower01/Desktop/lab-5-mbower01/css/style.scss */
+  table tr td:first-child, table tr th:first-child {
+    min-width: 250px; }
+  /* line 52, /Users/mbower01/Desktop/lab-5-mbower01/css/style.scss */
+  table .nostyle {
+    border: none; }
 
 /*# sourceMappingURL=style.css.map */

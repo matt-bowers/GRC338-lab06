@@ -1,10 +1,18 @@
 /* CSS Stylesheet */
 
+$table-border: solid 1px #ddd;
+
 html, body {
   height: 100%;
   margin: 0;
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-size: 100%;
+}
+
+section {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h1 {
@@ -20,4 +28,28 @@ h2 {
   line-height: 1em;
   padding: 0;
   margin: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border: $table-border;
+  th {
+    border: $table-border;
+    text-align: left;
+    font-weight: 600;
+    span {
+      font-weight: 300;
+      font-style: italic;
+    }
+  }
+  td {
+    border: $table-border;
+    vertical-align: bottom;
+  }
+  tr td:first-child, tr th:first-child {
+    min-width: 250px;
+  }
+  .nostyle {
+    border: none;
+  }
 }
