@@ -39,10 +39,10 @@
     <p>We love to hear from our loyal customers!</p>
     
     <form action="">
-      <input type="text" name="firstname" placeholder="First Name">
-      <input type="text" name="lastname" placeholder="Last Name"><br>
-      <input type="text" name="address" placeholder="Address">
-      <select name="state">
+      <input type="text" name="firstname" placeholder="First Name" required>
+      <input type="text" name="lastname" placeholder="Last Name" required><br>
+      <input type="text" name="address" placeholder="Address" required>
+      <select name="state" required>
         <option disabled selected>State</option>
         <option value="AL">AL</option>
         <option value="AK">AK</option>
@@ -96,9 +96,9 @@
         <option value="WI">WI</option>
         <option value="WY">WY</option>
       </select>
-      <input type="number" name="zip" placeholder="ZIP"><br>
-      <input type="tel" name="phone" placeholder="Phone Number">
-      <input type="email" name="email" placeholder="Email Address"><br>
+      <input type="text" name="zip" placeholder="ZIP" size="9" required><br>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <input type="email" name="email" placeholder="Email Address" required><br>
       <input type="radio" name="gender" value="male"> &nbsp; Male &nbsp; &nbsp; &nbsp;
       <input type="radio" name="gender" value="female"> &nbsp; Female<br>
       
@@ -111,10 +111,13 @@
         <option value="blue">Blue</option>
         <option value="purple">Purple</option>
       </select>
-      <hr>
-      <input type="text" name="cardnumber" placeholder="Credit Card Number" maxlength="16"><br>
-      <input type="text" name="cardname" placeholder="Cardholder Name"><br>
-      <select name="expmonth">
+      <p>&nbsp;</p>
+      <hr align="left">
+      <p>Please enter your credit card information so we can steal your money.</p>
+      <input type="text" name="cardnumber" placeholder="Card Number" maxlength="16" required><br>
+      <input type="text" name="cardname" placeholder="Cardholder Name" required><br>
+      <p>Expiration Date:</p>
+      <select name="expmonth" required>
         <option value="MM" disabled selected>MM</option>
         <option value="01">01</option>
         <option value="02">02</option>
@@ -129,14 +132,14 @@
         <option value="11">11</option>
         <option value="12">12</option>
       </select> / 
-      <select name="expyear">
+      <select name="expyear" required>
         <option value="YYYY" disabled selected>YYYY</option>
         <option value="2017">2017</option>
         <option value="2018">2018</option>
         <option value="2019">2019</option>
         <option value="2020">2020</option>
       </select>
-      <input type="text" name="cvv" placeholder="CVV" maxlength="4" size="4"><br>
+      <input type="text" name="cvv" placeholder="CVV" maxlength="4" size="4" required><br>
       <br>
       <input id="submit" type="submit" value="Submit">
       
