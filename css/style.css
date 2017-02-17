@@ -137,4 +137,8 @@ form input {
       color: #000;
       border: solid 1px #000; }
 
+/* line 142, /Users/mbower01/Desktop/338_06_Bowers/css/style.scss */
+form img {
+  vertical-align: middle; }
+
 /*# sourceMappingURL=style.css.map */
